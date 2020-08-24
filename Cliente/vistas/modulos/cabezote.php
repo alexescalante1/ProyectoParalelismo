@@ -1,35 +1,244 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">MISTORE</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar navbar-default">
+  <div class="container container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          CATEGORIAS
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button>
-    </form>
-  </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		  <li class="dropdown">
+		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ayuda <span class="caret"></span></a>
+		  <ul class="dropdown-menu">
+			<li><a href="#">Contactanos</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">Reporte de errores</a></li>
+			<li><a href="#">Disputas</a></li>
+		  </ul>
+		</li>
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+
+		
+		<li><a href="#">Cupones</a></li>
+
+		<li><a href="#">Lista de Deseos</a></li>
+		
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Identificate <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Registrate</a></li>
+            <li role="separator" class="divider"></li>
+			<li><a href="#">Mis Ordenes</a></li>
+			<li><a href="#">Mi Lista de Deseos</a></li>
+			<li><a href="#">Mis Tiendas Fabotritas</a></li>
+			<li><a href="#">Mis Cupones</a></li>
+          </ul>
+		</li>
+		
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
+
+<!--=====================================
+TOP
+======================================-->
+
+<header class="container-fluid cabeza">
+	
+	<div class="container">
+		
+		<div class="row" id="cabezote">
+
+			<!--=====================================
+			LOGOTIPO
+			======================================-->
+			
+			<div class="col-lg-2 col-md-3 col-sm-2 col-xs-12" id="logotipo">
+				
+				<a href="#">
+						
+					<img src="<?php echo $url; ?>vistas/img/plantilla/Logo.png" class="img-responsive">
+
+				</a>
+				
+			</div>
+
+			<!--=====================================
+			BLOQUE CATEGORÍAS Y BUSCADOR
+			======================================-->
+
+			<div class="col-lg-8 col-md-6 col-sm-8 col-xs-12">
+					
+				<!--=====================================
+				BUSCADOR
+				======================================-->
+				
+				<div class="input-group col-lg-12 col-md-11 col-sm-10 col-xs-12" id="buscador">
+					
+					<input type="search" name="buscar" class="form-control" placeholder="Buscar...">	
+					
+					<span class="input-group-btn">
+						
+						<a href="#">
+
+							<button class="btn btn-default whiteColor" id="btnCategorias">
+								
+								<i class="fa fa-sort-desc"></i>
+
+							</button>
+
+						</a>
+
+					</span>
+
+					<span class="input-group-btn">
+						
+						<a href="#">
+
+							<button class="btn btn-default backColor" type="submit">
+								
+								<i class="fa fa-search"></i>
+
+							</button>
+
+						</a>
+
+					</span>
+
+					
+
+				</div>
+			
+			</div>
+
+			<!--=====================================
+			BOTÓN CATEGORÍAS
+			======================================
+
+			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-12">
+				
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 backColor" id="btnCategorias">	
+					<p>
+					
+						<span>
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</span>
+					
+					</p>
+
+
+				</div>
+			</div>
+
+			<!--=====================================
+			CARRITO DE COMPRAS
+			======================================-->
+
+			<div class="input-group col-lg-2 col-md-3 col-sm-2 col-xs-12">
+				
+				<div class="col-lg-12 col-md-3 col-sm-2 col-xs-12" id="carrito">
+					
+					<a href="#">
+
+						<button class="btn btn-default pull-right backColor"> 
+							
+							<i class="fa fa-star" aria-hidden="true"></i>
+						
+						</button>
+					
+					</a>
+					<a href="#">
+
+						<button class="btn btn-default pull-right backColor"> 
+							
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+						
+						</button>
+					
+					</a>
+
+					<p>CESTA <span class="cantidadCesta">3</span> <br> USD $ <span class="sumaCesta">20</span></p>	
+
+				</div>
+					
+
+			</div>
+
+			<!--<div class="col-lg-2 col-md-3 col-sm-2 col-xs-12" id="login">
+				
+				<a href="#modalIngreso" data-toggle="modal">Login</a>
+				
+				<a href="#">
+
+					<button class="btn btn-default pull-right backColor"> 
+						
+						<i class="fa fa-user" aria-hidden="true"></i>
+					
+					</button>
+				
+				</a>
+
+			</div>-->
+
+		</div>
+
+		<!--=====================================
+		CATEGORÍAS
+		======================================-->
+
+		<div class="col-xs-12 backColor" id="categorias">
+
+			<?php
+
+				$item = null;
+				$valor = null;
+
+				$categorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
+
+				foreach ($categorias as $key => $value) {
+
+					echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+							
+							<h4>
+								<a href="'.$value["ruta"].'" class="pixelCategorias">'.$value["categoria"].'</a>
+							</h4>
+							
+							<hr>
+
+							<ul>';
+
+							$item = "id_categoria";
+
+							$valor = $value["id"];
+
+							$subcategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
+							
+							foreach ($subcategorias as $key => $value) {
+									
+									echo '<li><a href="'.$value["ruta"].'" class="pixelSubCategorias">'.$value["subcategoria"].'</a></li>';
+								}	
+								
+							echo '</ul>
+
+						</div>';
+				}
+
+			?>	
+
+		</div>
+
+	</div>
+
+</header>

@@ -1,0 +1,306 @@
+/*=============================================
+Mis estilos globales
+=============================================*/
+
+*{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Ubunt', sans-serif;
+}
+
+ul, ol{
+	padding:0px;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+	list-style: none;
+	text-decoration: none;
+}
+
+.barraSuperior{
+	background:rgb(241, 204, 38);
+	padding-bottom: -10px;
+}
+
+.barraSuperior a{
+	color:rgb(255, 255, 255);
+}
+
+.backColor, .backColor a{
+	background:#faa159;
+	color:white;
+}
+
+.whiteColor{
+	background:#ffffff;
+	color:rgb(0, 0, 0);
+}
+
+/*=============================================
+ERROR 404
+=============================================*/
+
+.error404{
+	color:#333;
+}
+
+
+/*=============================================
+Responsivo lg
+=============================================*/
+
+@media (min-width:1200px){
+
+	.col-lg-0{
+		display: none;
+	}
+
+	.error404 h1{
+		font-size:300px;
+		text-shadow:8px 8px 1px #dadada;
+	}
+
+}
+
+/*=============================================
+Responsivo md
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	.col-md-0{
+		display: none;
+	}
+
+	.error404 h1{
+		font-size:200px;
+		text-shadow:6px 6px 1px #dadada;
+	}
+
+}
+
+/*=============================================
+Responsivo sm
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+	.col-sm-0{
+		display: none;
+	}
+
+	.error404 h1{
+		font-size:150px;
+		text-shadow:4px 4px 1px #dadada;
+	}
+
+}
+
+/*=============================================
+Responsivo xs
+=============================================*/
+
+@media (max-width:767px){
+
+	.col-xs-0{
+		display: none;
+	}
+
+	.error404 h1{
+		font-size:75px;
+		text-shadow:2px 2px 1px #dadada;
+	}
+
+}
+
+
+
+
+/*=============================================
+HEADER
+=============================================*/
+
+.cabeza{
+		margin-top: -20px;
+}
+
+header #btnCategorias{
+	cursor: pointer;
+}
+
+header #btnCategorias p{
+	line-height:40px;
+	margin-bottom:0px;
+}
+
+header #btnCategorias p span{
+	margin-left: -5px;
+}
+
+header #buscador{
+	margin-top:10px;
+}
+
+header #buscador input{
+	padding:19px;
+	border-radius:0;
+}
+
+header #buscador button{
+	padding:9px 15px;
+	border:1px solid silver;
+	border-radius:0;
+}
+
+header #carrito{
+	margin:10px 0;
+}
+
+header #carrito button{
+	padding:9px 15px;
+	margin-left: 5px;
+	border:1px solid silver;
+	border-radius:20px;
+}
+
+header #carrito p{
+	padding:2px;
+	border:1px solid rgb(255, 255, 255);
+	font-size:12px;
+}
+
+header #categorias{
+	display:none;
+	margin-bottom: 20px;
+	position: relative;
+	border-radius: 5px;
+	padding-bottom:20px;
+}
+
+header #categorias h4{
+	margin-top:20px;
+	text-align: center;
+	margin-bottom:-15px;
+}
+
+header #categorias hr{
+	border:1px solid rgba(255,255,255,.3);
+}
+
+header #login{
+	margin:20px 0;
+	display:inline;
+	text-align: right;
+	line-height: 40px;
+}
+
+header #login a{
+	padding-right:5px;
+}
+
+header #login button{
+	padding:9px 15px;
+	border:1px solid silver;
+	border-radius:0;
+}
+
+/*=============================================
+1366px
+=============================================*/
+
+@media (min-width:1200px){
+
+	/*=============================================
+	HEADER
+	=============================================*/
+
+	header #logotipo img{
+		margin: 5px 0;
+		padding:5px 5px;
+		padding-left:0px;
+	}
+
+	header #carrito{
+		padding-left:5px;
+	}
+
+}
+
+/*=============================================
+1024px
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	/*=============================================
+	HEADER
+	=============================================*/
+
+	header #logotipo img{
+		margin: 5px 0;
+		padding:10px 10px;
+		padding-left:0px;
+	}
+
+	header #carrito{
+		padding-left:5px;
+	}
+
+}
+
+/*=============================================
+768px
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+	/*=============================================
+	HEADER
+	=============================================*/
+
+	header #logotipo img{
+		margin: 5px 0;
+		padding:10px 0px;
+	}
+
+	header #carrito{
+		padding-left:5px;
+	}
+
+	header #carrito p{
+		display:none;
+	}
+
+}
+
+/*=============================================
+320px
+=============================================*/
+
+@media (max-width:767px){
+
+	/*=============================================
+	HEADER
+	=============================================*/
+
+	header #logotipo img{
+		margin: 5px 0;
+		padding: 10px;
+		padding-bottom:5px;
+	}
+
+	header #categorias{
+		margin-bottom:7px;
+	}
+
+	header #buscador{
+		margin-bottom:7px;
+	}
+
+	header #carrito{
+		margin:0px;
+	}
+	
+}
