@@ -23,9 +23,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+	<!--
+	<link rel="stylesheet" href="https://alexescalante1.github.io/ProyectoParalelismo/Cliente/vistas/css/plugins/bootstrap.min.css">
+	-->
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/bootstrap.min">
 	
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/bootstrap.min.css">
-
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/font-awesome.min.css">
 
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/misEstilos.css">
