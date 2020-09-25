@@ -15,49 +15,49 @@
 					<div class="carousel-inner" role="listbox">
 					
 						<div class="item active">
-							<img src="<?php echo $url; ?>vistas/img/portada/c1.webp" alt="...">
+							<img src="<?php echo $url; ?>vistas/img/portada/c1.png" alt="...">
 							<div class="carousel-caption">
 						
 							</div>
 						</div>
 				
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c2.webp" alt="...">
+							<img src="<?php echo $url; ?>vistas/img/portada/c2.png" alt="...">
 							<div class="carousel-caption">
 								FREE!!
 							</div>
 						</div>
 					
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c3.webp" alt="...">
+							<img src="<?php echo $url; ?>vistas/img/portada/c3.png" alt="...">
 							<div class="carousel-caption">
 						
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c4.webp" alt="...">
+							<img src="<?php echo $url; ?>vistas/img/portada/c4.png" alt="...">
 							<div class="carousel-caption">
 						
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c5.webp" alt="...">
+							<img src="<?php echo $url; ?>vistas/img/portada/c5.png" alt="...">
 							<div class="carousel-caption">
 						
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c6.webp" alt="...">
+							<img src="<?php echo $url; ?>vistas/img/portada/c6.png" alt="...">
 							<div class="carousel-caption">
 						
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c7.webp" alt="...">
+							<img src="<?php echo $url; ?>vistas/img/portada/c7.png" alt="...">
 							<div class="carousel-caption">
 						
 							</div>
