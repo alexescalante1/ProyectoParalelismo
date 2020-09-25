@@ -18,23 +18,23 @@
 
 		$url = Ruta::ctrRuta();
 
+		$urlGitHub = RutaGitHub::ctrRuta();
+
 	?>
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
-	<!--
-	<link rel="stylesheet" href="https://alexescalante1.github.io/ProyectoParalelismo/01.Dependencias/plugins/bootstrap.min.css">
-	-->
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/bootstrapM.min.css">
-	
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/font-awesome.min.css">
 
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/misEstilos.css">
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/plugins/bootstrapM.min.css">
 
-	<script src="<?php echo $url; ?>vistas/js/plugins/jquery.min.js"></script>
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/plugins/font-awesome.min.css">
 
-	<script src="<?php echo $url; ?>vistas/js/plugins/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/misEstilos.css">
+
+	<script src="<?php echo $urlGitHub; ?>vistas/js/plugins/jquery.min.js"></script>
+
+	<script src="<?php echo $urlGitHub; ?>vistas/js/plugins/bootstrap.min.js"></script>
 
 </head>
 
