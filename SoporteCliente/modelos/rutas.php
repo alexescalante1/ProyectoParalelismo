@@ -4,7 +4,7 @@ class Ruta{
 
 	public function ctrRuta(){
 
-		return "http://localhost/PROYECTO_PARALELISMO/XxX_Microservicio_XxX/";
+		return "hhttps://alexescalante1.github.io/ProyectoParalelismo/SoporteCliente";
 	
 	}
 
