@@ -26,7 +26,7 @@
 
 	include "modulos/cabezote.php";
 
-}
+
 
 ?>
 
