@@ -17,7 +17,7 @@
 		  <li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ayuda <span class="caret"></span></a>
 		  <ul class="dropdown-menu">
-			<li><a href="#">Contactanos</a></li>
+			<li><a href="#">Contactanos, por favor ya no tenemos clientes</a></li>
 			<li role="separator" class="divider"></li>
 			<li><a href="#">Reporte de errores</a></li>
 			<li><a href="#">Disputas</a></li>
