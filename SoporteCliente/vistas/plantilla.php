@@ -27,7 +27,7 @@
 
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/misEstilos.css">
 
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/normalize.css">
+	<link rel="stylesheet" href="<?php echo $urlGitHub;?>vistas/css/normalize.css">
 
 </head>
 

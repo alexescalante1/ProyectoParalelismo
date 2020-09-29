@@ -1,12 +1,10 @@
 .footer-cabezal {
-    background-color: yellow;
+    margin-top: 0;
 }
 
-.body {
-    font-size: 100px;
-}
+.body {}
 
 body h1 {
-    color: black;
+    color: red;
     font-size: 100px;
 }
