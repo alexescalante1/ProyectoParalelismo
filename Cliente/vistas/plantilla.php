@@ -49,6 +49,7 @@ Cabezote
 include "modulos/cabezote.php";
 
 include "modulos/carrusel.php";
+include "modulos/productos.php";
 
 /*=============================================
 Dinamico
