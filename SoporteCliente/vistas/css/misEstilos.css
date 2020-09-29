@@ -1,4 +1,8 @@
-*{
-	margin:0px;
-	padding:0px;
+.footer-cabezal {
+    max-width: 80%;
+    background-color: red;
+}
+
+.body {
+    color: aqua;
 }

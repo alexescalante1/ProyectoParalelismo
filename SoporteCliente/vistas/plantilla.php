@@ -29,6 +29,7 @@
 <?php
 	
 	include "modulos/cabezote.php";
+	include "modulos/main.php"
 
 
 ?>

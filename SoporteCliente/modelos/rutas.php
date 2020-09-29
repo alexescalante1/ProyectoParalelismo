@@ -4,7 +4,7 @@ class Ruta{
 
 	public function ctrRuta(){
 
-		return "hhttps://alexescalante1.github.io/ProyectoParalelismo/SoporteCliente";
+		return "https://alexescalante1.github.io/ProyectoParalelismo/SoporteCliente";
 	
 	}
 
