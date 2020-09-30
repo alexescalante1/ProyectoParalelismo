@@ -16,9 +16,8 @@
 					
 						<div class="item active">
 							<a href="https://www.youtube.com/watch?v=YQRHrco73g4">
-							<img src="<?php echo $url; ?>vistas/img/portada/c1.png" alt="...">
+								<img src="<?php echo $url; ?>vistas/img/portada/c1.png" alt="...">
 							</a>
-							
 							
 							<div class="carousel-caption">
 						
