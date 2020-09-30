@@ -111,6 +111,7 @@ if(isset($_GET["ruta"])){
 
 ?>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <script src="<?php echo $url; ?>vistas/js/misScripts.js"></script>
 
 </body>

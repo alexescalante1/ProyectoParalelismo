@@ -18,49 +18,60 @@
 							<a href="https://www.youtube.com/watch?v=YQRHrco73g4">
 								<img src="<?php echo $url; ?>vistas/img/portada/c1.png" alt="...">
 							</a>
-							
 							<div class="carousel-caption">
-						
+								Oie Zii
 							</div>
 						</div>
 				
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c2.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c2.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 								FREE!!
 							</div>
 						</div>
 					
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c3.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c3.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 						
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c4.png" alt="...">
+							<a href="#">	
+								<img src="<?php echo $url; ?>vistas/img/portada/c4.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 						
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c5.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c5.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 						
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c6.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c6.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 						
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c7.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c7.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 						
 							</div>
@@ -95,49 +106,63 @@
 					<div class="carousel-inner" role="listbox">
 					
 						<div class="item active">
-							<img src="<?php echo $url; ?>vistas/img/portada/c31.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c31.png" alt="...">
+							</a>	
 							<div class="carousel-caption">
 						
 							</div>
 						</div>
 				
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c32.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c32.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 								FREE!!
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c33.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c33.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 								FREE!!
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c34.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c34.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 								FREE!!
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c35.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c35.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 								FREE!!
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c36.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c36.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 								FREE!!
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="<?php echo $url; ?>vistas/img/portada/c37.png" alt="...">
+							<a href="#">
+								<img src="<?php echo $url; ?>vistas/img/portada/c37.png" alt="...">
+							</a>
 							<div class="carousel-caption">
 								FREE!!
 							</div>
