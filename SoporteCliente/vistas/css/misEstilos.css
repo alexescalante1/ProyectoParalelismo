@@ -1,4 +1,10 @@
-*{
-	margin:0px;
-	padding:0px;
+.footer-cabezal {
+    margin-top: 0;
+}
+
+.body {}
+
+body h1 {
+    color: red;
+    font-size: 100px;
 }
