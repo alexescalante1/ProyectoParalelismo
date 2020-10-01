@@ -18,7 +18,7 @@ class ControladorPlantilla{
 
 	public function ctrEstiloPlantilla(){
 
-		$tabla = "plantilla";
+		$tabla = "plantilla"; ///El nombre de la tabla
 
 		$respuesta = ModeloPlantilla::mdlEstiloPlantilla($tabla);
 

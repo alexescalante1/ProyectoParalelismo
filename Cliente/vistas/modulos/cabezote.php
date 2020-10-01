@@ -67,7 +67,7 @@ TOP
 			
 			<div class="col-lg-2 col-md-3 col-sm-2 col-xs-12" id="logotipo">
 				
-				<a href="#">
+				<a href="<?php echo $url; ?>">
 						
 					<img src="<?php echo $url; ?>vistas/img/plantilla/Logo.png" class="img-responsive">
 
@@ -198,16 +198,18 @@ TOP
 		CATEGORÍAS
 		======================================-->
 
-		<div class="col-xs-12 backColor" id="categorias">
+		<div class="col-xs-12 backColor" id="categorias">  
 
 			<?php
 
 				$item = null;
 				$valor = null;
 
-				$categorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
+				$categorias = ControladorProductos::ctrMostrarCategorias($item, $valor); ///Trae los datos db
 
-				foreach ($categorias as $key => $value) {
+				///var_dump($categorias);
+
+				foreach ($categorias as $key => $value) { /// foreach = hace un recorrido de la tabla, cada item y key se evalua con la var value
 
 					echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 							
@@ -219,13 +221,13 @@ TOP
 
 							<ul>';
 
-							$item = "id_categoria";
+							$item = "id_categoria";  ///Tabla De referencia
 
-							$valor = $value["id"];
+							$valor = $value["id"];   ///Valor id actual
 
 							$subcategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
 							
-							foreach ($subcategorias as $key => $value) {
+							foreach ($subcategorias as $key => $value) {  ///Recorre la tabla
 									
 									echo '<li><a href="'.$value["ruta"].'" class="pixelSubCategorias">'.$value["subcategoria"].'</a></li>';
 								}	

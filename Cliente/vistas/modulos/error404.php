@@ -10,7 +10,7 @@ ERROR 404
 			
 			<h1>404</h1>
 			
-			<h2>Oops! Página no encontrada</h2>
+			<h2>We No Lo Encontre :´v</h2>
 
 		</div>
 

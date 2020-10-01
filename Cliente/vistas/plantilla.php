@@ -26,15 +26,15 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 
-	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/plugins/bootstrapM.min.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/bootstrapM.min.css">
 
-	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/plugins/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/font-awesome.min.css">
 
-	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/misEstilos.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/misEstilos.css">
 
-	<script src="<?php echo $urlGitHub; ?>vistas/js/plugins/jquery.min.js"></script>
+	<script src="<?php echo $url; ?>vistas/js/plugins/jquery.min.js"></script>
 
-	<script src="<?php echo $urlGitHub; ?>vistas/js/plugins/bootstrap.min.js"></script>
+	<script src="<?php echo $url; ?>vistas/js/plugins/bootstrap.min.js"></script>
 
 </head>
 
@@ -49,24 +49,27 @@ Cabezote
 include "modulos/cabezote.php";
 
 include "modulos/carrusel.php";
-include "modulos/productos.php";
 
 /*=============================================
-Dinamico
+LISTA BLANCA DE URLS AMIGABLES (DINAMICO)
 =============================================*/
 
-$rutas = array();
+$rutas = array(); ///Declarando como base array
 $ruta = null;
 
-if(isset($_GET["ruta"])){
+if(isset($_GET["ruta"])){ ///Evalua si se envia var Get o Post
 
-	$rutas = explode("/", $_GET["ruta"]);
+	//echo $_GET["ruta"];
 
-	$item = "ruta";
+	$rutas = explode("/", $_GET["ruta"]);  ///separa los indices
+
+	///var_dump($rutas);
+
+	$item = "ruta"; ///item == Name de seccion de la tabla
 	$valor =  $rutas[0];
 
 	/*=============================================
-	lista de URL'S amigables (categoria) 
+	lista de URLS amigables (categoria) 
 	=============================================*/
 
 	$rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
@@ -78,12 +81,12 @@ if(isset($_GET["ruta"])){
 	}
 
 	/*=============================================
-	URL'S (subcat)
+	lista de URLS (subcategoria)
 	=============================================*/
 
 	$rutaSubCategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
 
-	foreach ($rutaSubCategorias as $key => $value) {
+	foreach ($rutaSubCategorias as $key => $value) {  ///Recorre el array
 		
 		if($rutas[0] == $value["ruta"]){
 
@@ -94,7 +97,7 @@ if(isset($_GET["ruta"])){
 	}
 
 	/*=============================================
-	nulo
+	Traer los datos requeridos
 	=============================================*/
 
 	if($ruta != null){

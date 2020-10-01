@@ -3,14 +3,14 @@
 require_once "conexion.php";
 
 class ModeloPlantilla{
+	///Whit parametros -> static
+	static public function mdlEstiloPlantilla($tabla){ /// Trae los items de $tabla
 
-	static public function mdlEstiloPlantilla($tabla){
+		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla"); ///Selecciona los items
 
-		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+		$stmt -> execute(); ///ejecutamos el objeto
 
-		$stmt -> execute();
-
-		return $stmt -> fetch();
+		return $stmt -> fetch();  ///Retornamos solo una linea ///varias fetchall
 
 		$stmt -> close();
 

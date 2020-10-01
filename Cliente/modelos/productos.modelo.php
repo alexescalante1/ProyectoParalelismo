@@ -14,11 +14,11 @@ class ModeloProductos{
 
 			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
 
-			$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+			$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR); ///Concatena un string
 
 			$stmt -> execute();
 
-			return $stmt -> fetch();
+			return $stmt -> fetch();    ///retorna un solo valor
 
 		}else{
 
@@ -26,7 +26,7 @@ class ModeloProductos{
 
 			$stmt -> execute();
 
-			return $stmt -> fetchAll();
+			return $stmt -> fetchAll();  ///retorna toda la tabla
 
 		}
 		
