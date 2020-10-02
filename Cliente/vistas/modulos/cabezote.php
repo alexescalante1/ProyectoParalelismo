@@ -1,7 +1,10 @@
 <nav class="navbar navbar-default">
+
   <div class="container container-fluid">
+
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
+	
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -17,7 +20,7 @@
 		  <li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ayuda <span class="caret"></span></a>
 		  <ul class="dropdown-menu">
-			<li><a href="#">Contactanos, por favor ya no tenemos clientes</a></li>
+			<li><a href="<?php echo $urlSoporteCliente; ?>">Contactanos, por favor ya no tenemos clientes</a></li>
 			<li role="separator" class="divider"></li>
 			<li><a href="#">Reporte de errores</a></li>
 			<li><a href="#">Disputas</a></li>
@@ -69,7 +72,7 @@ TOP
 				
 				<a href="<?php echo $url; ?>">
 						
-					<img src="<?php echo $url; ?>vistas/img/plantilla/Logo.png" class="img-responsive">
+					<img src="<?php echo $servidor; ?>vistas/img/plantilla/Logo.png" class="img-responsive">
 
 				</a>
 				
@@ -169,7 +172,11 @@ TOP
 					
 					</a>
 
-					<p>CESTA <span class="cantidadCesta">3</span> <br> USD $ <span class="sumaCesta">20</span></p>	
+					<a href="#">
+						
+						<p>VER TU CESTA<span class="cantidadCesta"> </span> <br>   <span class="sumaCesta"> </span></p>	
+					
+					</a>
 
 				</div>
 					
@@ -230,7 +237,8 @@ TOP
 							foreach ($subcategorias as $key => $value) {  ///Recorre la tabla
 									
 									echo '<li><a href="'.$value["ruta"].'" class="pixelSubCategorias">'.$value["subcategoria"].'</a></li>';
-								}	
+							
+							}	
 								
 							echo '</ul>
 

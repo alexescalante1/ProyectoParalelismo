@@ -18,7 +18,11 @@
 
 		$url = Ruta::ctrRuta();
 
-		$urlGitHub = RutaGitHub::ctrRuta();
+		$servidor = Ruta::ctrRutaServidor();
+
+		$urlGitHub = Ruta::ctrRutaGitHub();
+
+		$urlSoporteCliente = Ruta::ctrRutaSoporteCliente();
 
 	?>
 
@@ -48,8 +52,6 @@ Cabezote
 
 include "modulos/cabezote.php";
 
-include "modulos/carrusel.php";
-
 /*=============================================
 LISTA BLANCA DE URLS AMIGABLES (DINAMICO)
 =============================================*/
@@ -57,13 +59,13 @@ LISTA BLANCA DE URLS AMIGABLES (DINAMICO)
 $rutas = array(); ///Declarando como base array
 $ruta = null;
 
-if(isset($_GET["ruta"])){ ///Evalua si se envia var Get o Post
+if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
 	//echo $_GET["ruta"];
 
 	$rutas = explode("/", $_GET["ruta"]);  ///separa los indices
 
-	///var_dump($rutas);
+	//var_dump($rutas);
 
 	$item = "ruta"; ///item == Name de seccion de la tabla
 	$valor =  $rutas[0];
@@ -86,6 +88,7 @@ if(isset($_GET["ruta"])){ ///Evalua si se envia var Get o Post
 
 	$rutaSubCategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
 
+	///        Tabla               clave    elemento
 	foreach ($rutaSubCategorias as $key => $value) {  ///Recorre el array
 		
 		if($rutas[0] == $value["ruta"]){
@@ -110,10 +113,17 @@ if(isset($_GET["ruta"])){ ///Evalua si se envia var Get o Post
 
 	}
 
+}else{
+
+	include "modulos/carrusel.php";
+
 }
 
+echo "<br><br><br><br><br><br>";
+
+include "modulos/footer.php";
+
 ?>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <script src="<?php echo $url; ?>vistas/js/misScripts.js"></script>
 
