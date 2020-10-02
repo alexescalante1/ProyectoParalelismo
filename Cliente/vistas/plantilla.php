@@ -117,7 +117,10 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
 	include "modulos/carrusel.php";
 
+	include "modulos/destacados.php";
+
 }
+
 
 echo "<br><br><br><br><br><br>";
 

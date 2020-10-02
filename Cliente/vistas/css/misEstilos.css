@@ -117,7 +117,7 @@ Responsivo xs
 
 
 /*=============================================
-HEADER
+CABEZOTE
 =============================================*/
 
 .cabeza{
@@ -203,6 +203,19 @@ header #login button{
 	border:1px solid silver;
 	border-radius:0;
 }
+
+/*=============================================
+BARRA DE PRODUCTOS
+=============================================*/
+
+.barraProductos{
+	margin-top: 10px;
+}
+
+.barraProductos .organizaProductos span{
+	margin-left: 5px;
+}
+
 
 /*=============================================
 1366px
