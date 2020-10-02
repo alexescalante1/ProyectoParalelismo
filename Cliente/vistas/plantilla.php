@@ -113,7 +113,7 @@ if(isset($_GET["ruta"])){ ///Evalua si se envia var Get o Post
 }
 
 ?>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <script src="<?php echo $url; ?>vistas/js/misScripts.js"></script>
 
