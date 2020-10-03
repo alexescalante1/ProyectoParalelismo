@@ -72,7 +72,7 @@ TOP
 				
 				<a href="<?php echo $url; ?>">
 						
-					<img src="<?php echo $servidor; ?>vistas/img/plantilla/Logo.png" class="img-responsive">
+					<img src="<?php echo $servidor; ?>vistas/img/plantilla/Logo4.png" class="img-responsive">
 
 				</a>
 				
