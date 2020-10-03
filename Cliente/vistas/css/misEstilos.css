@@ -213,7 +213,8 @@ BARRA DE PRODUCTOS
 }
 
 .barraProductos .organizaProductos span{
-	margin-left: 5px;
+	margin-left: 10px;
+	padding-left: 5px;
 }
 
 

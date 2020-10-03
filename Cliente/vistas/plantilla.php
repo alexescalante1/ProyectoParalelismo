@@ -36,6 +36,8 @@
 
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/misEstilos.css">
 
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/footerEstilos.css">
+
 	<script src="<?php echo $url; ?>vistas/js/plugins/jquery.min.js"></script>
 
 	<script src="<?php echo $url; ?>vistas/js/plugins/bootstrap.min.js"></script>
