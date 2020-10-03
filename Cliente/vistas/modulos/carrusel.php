@@ -103,9 +103,17 @@
 					<span class="sr-only">siguiente</span>
 				</a>
 			</div>
+			
 		</div>
 
 		<div class="col-md-4">
+
+			<a href="https://www.youtube.com/watch?v=j5vYLYZjecI&ab_channel=AlexCGDesign">
+                <video onloadedmetadata="this.muted=true" autoplay loop>
+                    <source src="<?php echo $servidor; ?>vistas/video/Red8.mp4">
+                </video>
+			</a>
+			
 			<div id="carousel-example-generics" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-example-generics" data-slide-to="0" class="active"></li>

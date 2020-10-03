@@ -1,6 +1,6 @@
 
 <!--=============================================
-BARRA DE PRODUCTOS GRID o LISTA
+BARRA DE PRODUCTOS GRID o LISTA "ORGANIZADOR"
 =============================================-->
 
 <div class = "container-fluid well well-sm barraProductos">
@@ -38,3 +38,4 @@ BARRA DE PRODUCTOS GRID o LISTA
 <!--=============================================
 BARRA DE PRODUCTOS
 =============================================-->
+
