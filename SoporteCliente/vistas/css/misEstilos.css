@@ -1,9 +1,327 @@
-.footer-cabezal {
-    margin-top: 0;
-    color: orchid;
+html {
+    font-size: 62.5%;
 }
 
-body h1 {
-    color: orange;
-    font-size: 100px;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.footer-cabezal {
+    justify-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+
+/*GENERAL*/
+
+.contenedor {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*nav*/
+
+.principal {
+    background-color: rgb(255, 243, 243);
+}
+
+.cabezera {
+    display: flex;
+    justify-content: space-between;
+    min-height: 2rem;
+    align-items: center;
+}
+
+
+/*
+@media (max-width: 950px) {
+    .contenedor {
+        max-width: 60rem;
+    }
+}*/
+
+.cabezera a {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.8rem;
+    align-items: center;
+    color: gray;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.footer-2 a {
+    margin-right: 1.5rem;
+}
+
+.imagen-footer {
+    width: 20rem;
+}
+
+
+/*BOTONES */
+
+.dropbtn {
+    background-color: rgb(255, 243, 243);
+    color: gray;
+    padding: 16px;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #e6d4d4
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(255, 243, 243);
+}
+
+
+/* principal contenido*/
+
+.contenido-principal {
+    max-width: 80rem;
+}
+
+.imagenAC {
+    background-image: url(../img/atencionAlcliente.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 25rem;
+}
+
+.contenido-principal p {
+    line-height: 2;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.contenido-principal h1 {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.parrafo::after {
+    content: " ";
+    display: block;
+    background-color: gray;
+    width: 80rem;
+    height: 0.3rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+
+/*FORMULARIO*/
+
+.marginformulario {
+    margin: 1rem;
+}
+
+.formulario {
+    max-width: 80rem;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.datosFormulario {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.registroFormulario {
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.correo p {
+    line-height: 1.8;
+}
+
+.registroFormulario legend {
+    font-size: 2.5rem;
+}
+
+.registroFormulario label {
+    font-size: 1.5rem;
+}
+
+.registroFormulario input {
+    margin-left: 0;
+    padding: 0.3rem;
+    background-color: #D8D7D7;
+    border: 8px solid #D8D7D7;
+    border-radius: 10rem;
+    width: 95%;
+    font-size: 1.5rem;
+}
+
+.registroFormulario textarea {
+    padding: 0.3rem;
+    background-color: #D8D7D7;
+    border: 8px solid #D8D7D7;
+    border-radius: 1rem;
+    width: 95%;
+}
+
+.registroFormulario select {
+    display: block;
+    padding: 0.3rem;
+    background-color: #D8D7D7;
+    border: 8px solid #D8D7D7;
+    border-radius: 10rem;
+    width: 95%;
+}
+
+.BOTON {
+    color: white;
+    background-color: gray;
+    padding: 0.8rem;
+    font-size: 1.8rem;
+    border: gray;
+    border-radius: 10%;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.BOTON:hover {
+    cursor: pointer;
+}
+
+.formulario::after {
+    content: " ";
+    width: 80rem;
+    background-color: gray;
+    height: 0.3rem;
+    margin-top: 6rem;
+}
+
+
+/*SECCION DEVOLUCIONES*/
+
+.devo::after {
+    content: " ";
+    display: block;
+    background-color: gray;
+    width: 80rem;
+    height: 0.3rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.bloquePrincipal {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2.5rem;
+}
+
+.primerbloque h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.primerbloque p {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+
+/*footer*/
+
+.down {
+    margin-top: 5rem;
+    background-color: black;
+    height: 12rem;
+    display: flex;
+}
+
+.down h1 {
+    text-align: center;
+    color: wheat;
+    font-size: 2rem;
 }
