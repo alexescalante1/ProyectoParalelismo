@@ -52,8 +52,8 @@ PRODUCTOS DESTACADOS EN OFERTA
 
             <div class = "col-xs-12 tituloDestacado">
 
-                <div class = "col-sm-6 col-xs-12">
-                    <h1>
+                <div class = "col-sm-6 col-xs-8">
+                    <h1 class = "h1OnlyMovil">
 
                         <small>
                             ARTICULOS EN OFERTA
@@ -64,7 +64,7 @@ PRODUCTOS DESTACADOS EN OFERTA
 
                 <!--=============================================-->
 
-                <div class = "col-sm-6 col-xs-12">
+                <div class = "col-sm-6 col-xs-4">
                     <a href="articulos-gratis">
                         <button class = "btn btn-default backColor pull-right">
                             Ver Mas <span class = "fa fa-chevron-right"></span>
@@ -76,7 +76,7 @@ PRODUCTOS DESTACADOS EN OFERTA
 
             </div>
 
-            <hr>
+            <hr><br>
 
         </div>
 
@@ -90,7 +90,7 @@ PRODUCTOS DESTACADOS EN OFERTA
             <!--=============== PRODUCTO N ===============-->
 
 
-            <li class = "col-md-3 col-sm-6 col-xs-12">
+            <li class = "col-md-3 col-sm-6 col-xs-6">
                 <figure>
                     <a href="#">
                         <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/1.png" class = "img-responsive">
@@ -153,7 +153,7 @@ PRODUCTOS DESTACADOS EN OFERTA
             <!--=============== PRODUCTO N ===============-->
 
 
-            <li class = "col-md-3 col-sm-6 col-xs-12">
+            <li class = "col-md-3 col-sm-6 col-xs-6">
                 <figure>
                     <a href="#">
                         <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/2.png" class = "img-responsive">
@@ -216,7 +216,7 @@ PRODUCTOS DESTACADOS EN OFERTA
             <!--=============== PRODUCTO N ===============-->
 
 
-            <li class = "col-md-3 col-sm-6 col-xs-12">
+            <li class = "col-md-3 col-sm-6 col-xs-6">
                 <figure>
                     <a href="#">
                         <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/3.png" class = "img-responsive">
@@ -279,7 +279,7 @@ PRODUCTOS DESTACADOS EN OFERTA
             <!--=============== PRODUCTO N ===============-->
 
 
-            <li class = "col-md-3 col-sm-6 col-xs-12">
+            <li class = "col-md-3 col-sm-6 col-xs-6">
                 <figure>
                     <a href="#">
                         <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/4.png" class = "img-responsive">
@@ -343,7 +343,7 @@ PRODUCTOS DESTACADOS EN OFERTA
             <!--=============== PRODUCTO N ===============-->
 
 
-            <li class = "col-md-3 col-sm-6 col-xs-12">
+            <li class = "col-md-3 col-sm-6 col-xs-6">
                 <figure>
                     <a href="#">
                         <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/5.png" class = "img-responsive">
@@ -406,7 +406,7 @@ PRODUCTOS DESTACADOS EN OFERTA
             <!--=============== PRODUCTO N ===============-->
 
 
-            <li class = "col-md-3 col-sm-6 col-xs-12">
+            <li class = "col-md-3 col-sm-6 col-xs-6">
                 <figure>
                     <a href="#">
                         <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/6.png" class = "img-responsive">
@@ -467,7 +467,7 @@ PRODUCTOS DESTACADOS EN OFERTA
             <!--=============== PRODUCTO N ===============-->
 
 
-            <li class = "col-md-3 col-sm-6 col-xs-12">
+            <li class = "col-md-3 col-sm-6 col-xs-6">
                 <figure>
                     <a href="#">
                         <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/7.png" class = "img-responsive">
@@ -529,7 +529,7 @@ PRODUCTOS DESTACADOS EN OFERTA
             <!--=============== PRODUCTO N ===============-->
 
 
-            <li class = "col-md-3 col-sm-6 col-xs-12">
+            <li class = "col-md-3 col-sm-6 col-xs-6">
                 <figure>
                     <a href="#">
                         <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/8.png" class = "img-responsive">

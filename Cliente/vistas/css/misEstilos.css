@@ -226,6 +226,8 @@ header #login button{
 
 
 
+
+
 /*=============================================
 BARRA DE PRODUCTOS
 =============================================*/
@@ -257,10 +259,16 @@ PRODUCTOS DESTACADOS
 
 }
 
+.productos ul li a img{
+	transition: .7s all ease;
+	opacity: 1;
+	transform: scale(1,1);
+}
+
 .productos ul li a img:hover{
-	transition: .3s all ease;
-	opacity: .8;
-	transform: scale(1.1,1.1);
+	transition: .2s all ease;
+	opacity: .6;
+	transform: scale(1.15,1.15);
 }
 
 .productos ul li h4 small{
@@ -295,6 +303,14 @@ PRODUCTOS DESTACADOS
 }
 
 
+
+
+
+
+
+
+
+
 /*=============================================
 VIDEO
 =============================================*/
@@ -309,6 +325,19 @@ video{
 
 
 
+/*=============================================
+PRECIOS PRODUCTO
+=============================================*/
+
+.PecioSolesProducto{
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+	text-shadow: 1px 1px 0px rgb(116, 116, 116) ;
+}
+
+.PecioSolesProducto::before{
+    content: "S/";
+}
 
 
 
@@ -387,6 +416,13 @@ video{
 		display:none;
 	}
 
+	.onlyDesctop{
+		display: none;
+	}
+
+	.h1OnlyMovil{
+		font-size: 25px;
+	}
 }
 
 /*=============================================
@@ -415,6 +451,14 @@ video{
 
 	header #carrito{
 		margin:0px;
+	}
+
+	.onlyDesctop{
+		display: none;
+	}
+
+	.h1OnlyMovil{
+		font-size: 25px;
 	}
 	
 }
