@@ -147,7 +147,7 @@ header #btnCategorias{
 }
 
 header #btnCategorias p{
-	line-height:40px;
+	line-height: 40px;
 	margin-bottom:0px;
 }
 
@@ -167,7 +167,7 @@ header #buscador input{
 header #buscador button{
 	padding:9px 15px;
 	border:1px solid silver;
-	border-radius:0;
+	border-radius:1px;
 }
 
 header #carrito{
@@ -178,12 +178,12 @@ header #carrito button{
 	padding:9px 15px;
 	margin-left: 5px;
 	border:1px solid silver;
-	border-radius:20px;
+	border-radius:5px;
 }
 
 header #carrito p{
 	padding:2px;
-	border:1px solid rgb(255, 255, 255);
+	border:2px solid rgb(255, 255, 255);
 	font-size:12px;
 }
 
@@ -193,6 +193,7 @@ header #categorias{
 	position: relative;
 	border-radius: 5px;
 	padding-bottom:20px;
+	margin-top: 10px;
 }
 
 header #categorias h4{
@@ -219,14 +220,50 @@ header #login a{
 header #login button{
 	padding:9px 15px;
 	border:1px solid silver;
-	border-radius:0;
+	border-radius:5px;
 }
 
+.verCesta{
+	width: 70%;
+	border-radius: 5px;
+}
 
+.verCesta div{
+	text-align: center;
+	color: red;
+}
 
+.verCesta div h2{
+	transition: .4s all ease;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	position: absolute;
+	padding-left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
 
+.accesoRapidoPortada ul li a p{
+	padding: 0;
+	margin: 0;
+	color: rgb(153, 153, 153);
+	font-size: 11px;
+	font-weight: bold;
+	padding-right: 15px;
+	margin-top: -10px;
+	transition: .7s all ease;
+	transform: scale(1,1);
+}
 
-
+.accesoRapidoPortada ul li a p:hover{
+	transition: .2s all ease;
+	color: rgb(255, 0, 0);
+	transform: scale(1.02,1.02);
+}
 
 /*=============================================
 BARRA DE PRODUCTOS
@@ -256,19 +293,20 @@ PRODUCTOS DESTACADOS
 
 .productos ul li figure{
 	overflow: hidden;
-
+	border-radius: 5px;
 }
 
 .productos ul li a img{
-	transition: .7s all ease;
+	border-radius: 5px;
+	transition: .9s all ease;
 	opacity: 1;
 	transform: scale(1,1);
 }
 
 .productos ul li a img:hover{
-	transition: .2s all ease;
+	transition: .3s all ease;
 	opacity: .6;
-	transform: scale(1.15,1.15);
+	transform: scale(1.07,1.07);
 }
 
 .productos ul li h4 small{
@@ -459,6 +497,10 @@ PRECIOS PRODUCTO
 
 	.h1OnlyMovil{
 		font-size: 25px;
+	}
+
+	.verCesta{
+		width: 100%;
 	}
 	
 }

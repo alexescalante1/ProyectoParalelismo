@@ -6,57 +6,89 @@
     <div class="navbar-header">
 	
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"></a>
+		
+		<span class="sr-only">Toggle navigation</span>
+		  
+		<span class="icon-bar"></span>
+		
+		<span class="icon-bar"></span>
+		
+		<span class="icon-bar"></span>
+		
+	  </button>
+	  
+	  <a class="navbar-brand" href="#"></a>
+	  
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-		  <li class="dropdown">
-		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ayuda <span class="caret"></span></a>
-		  <ul class="dropdown-menu">
-			<li><a href="<?php echo $urlSoporteCliente; ?>">Contactanos, por favor ya no tenemos clientes</a></li>
-			<li role="separator" class="divider"></li>
-			<li><a href="#">Reporte de errores</a></li>
-			<li><a href="#">Disputas</a></li>
-		  </ul>
-		</li>
-        
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-		  
-	 	<li><a href="#">Idioma</a></li>
-		
-		<li><a href="#">Cupones</a></li>
 
-		<li><a href="#">Lista de Deseos</a></li>
+      	<ul class="nav navbar-nav">
+
+		  	<li class="dropdown">
+
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ayuda <span class="caret"></span></a>
+
+				<ul class="dropdown-menu">
+
+					<li><a href="<?php echo $urlSoporteCliente; ?>">Contactanos, por favor ya no tenemos clientes</a></li>
+
+					<li role="separator" class="divider"></li>
+
+					<li><a href="#">Reporte de errores</a></li>
+
+					<li><a href="#">Disputas</a></li>
+
+				</ul>
+
+			</li>
+        
+      	</ul>
+      
+      	<ul class="nav navbar-nav navbar-right">
+		  
+			<li><a href="#">Idioma</a></li>
+			
+			<li><a href="#">Cupones</a></li>
+
+			<li><a href="#">Lista de Deseos</a></li>
 		
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Identificate <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Registrate</a></li>
-            <li role="separator" class="divider"></li>
-			<li><a href="#">Mis Ordenes</a></li>
-			<li><a href="#">Mi Lista de Deseos</a></li>
-			<li><a href="#">Mis Tiendas Fabotritas</a></li>
-			<li><a href="#">Mis Cupones</a></li>
-          </ul>
-		</li>
+			<li class="dropdown">
+
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Identificate <span class="caret"></span></a>
+
+				<ul class="dropdown-menu">
+					
+					<li><a href="#">Login</a></li>
+
+					<li><a href="#">Registrate</a></li>
+
+					<li role="separator" class="divider"></li>
+
+					<li><a href="#">Mis Ordenes</a></li>
+
+					<li><a href="#">Mi Lista de Deseos</a></li>
+
+					<li><a href="#">Mis Tiendas Fabotritas</a></li>
+
+					<li><a href="#">Mis Cupones</a></li>
+
+				</ul>
+			</li>
 		
-      </ul>
-    </div><!-- /.navbar-collapse -->
+		  </ul>
+		  
+	</div><!-- /.navbar-collapse -->
+	
   </div><!-- /.container-fluid -->
+
 </nav>
 
+
+
 <!--=====================================
-TOP
+NAV PAGINA
 ======================================-->
 
 <header class="container-fluid cabeza">
@@ -69,7 +101,7 @@ TOP
 			LOGOTIPO
 			======================================-->
 			
-			<div class="col-lg-2 col-md-3 col-sm-2 col-xs-12" id="logotipo">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" id="logotipo">
 				
 				<a href="<?php echo $url; ?>">
 						
@@ -83,13 +115,13 @@ TOP
 			BLOQUE CATEGORÍAS Y BUSCADOR
 			======================================-->
 
-			<div class="col-lg-8 col-md-6 col-sm-8 col-xs-12">
+			<div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
 					
 				<!--=====================================
 				BUSCADOR
 				======================================-->
 				
-				<div class="input-group col-lg-12 col-md-11 col-sm-10 col-xs-12" id="buscador">
+				<div class="input-group col-xs-12" id="buscador">
 					
 					<input type="search" name="buscar" class="form-control" placeholder="Buscar...">	
 					
@@ -150,11 +182,14 @@ TOP
 			CARRITO DE COMPRAS
 			======================================-->
 
-			<div class="input-group col-lg-2 col-md-3 col-sm-2 col-xs-12">
+			<div class="input-group col-lg-2 col-md-3 col-sm-3 col-xs-12">
+
+
 				
-				<div class="col-lg-12 col-md-3 col-sm-2 col-xs-12" id="carrito">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="carrito">
 					
-					<a href="#">
+					
+					<a href="#" class = "onlyDesctop">
 
 						<button class="btn btn-default pull-right backColor"> 
 							
@@ -163,19 +198,25 @@ TOP
 						</button>
 					
 					</a>
-					<a href="#">
 
-						<button class="btn btn-default pull-right backColor"> 
+					<a href="#">
+						
+						<div class="pull-right verCesta backColor"> 
+
+							<button class="btn btn-default pull-right backColor"> 
+								
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+
+							</button>
+
+							<div class = "TextCesta">
+
+								<h2>Mi Cesta</h2>
+								
+							</div>
 							
-							<i class="fa fa-cart-plus" aria-hidden="true"></i>
 						
-						</button>
-					
-					</a>
-
-					<a href="#">
-						
-						<p>VER TU CESTA<span class="cantidadCesta"> </span> <br>   <span class="sumaCesta"> </span></p>	
+						</div>
 					
 					</a>
 
@@ -218,7 +259,7 @@ TOP
 
 				foreach ($categorias as $key => $value) { /// foreach = hace un recorrido de la tabla, cada item y key se evalua con la var value
 
-					echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+					echo '<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
 							
 							<h4>
 								<a href="'.$value["ruta"].'" class="pixelCategorias">'.$value["categoria"].'</a>

@@ -3,7 +3,11 @@
             <div class="cabezera contenedor">
                 <div class="footer-1">
                     <div class="imagen-footer">
-                        <img src="vistas/img/plantilla/Logo.png" alt="">
+                        <a href="http://localhost/PROYECTO_PARALELISMO/Cliente/">
+                            
+                            <img src="vistas/img/plantilla/Logo.png" alt="">
+
+                        </a>
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn">Ayuda</button>

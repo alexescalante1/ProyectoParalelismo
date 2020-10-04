@@ -71,19 +71,7 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
 	$item = "ruta"; ///item == Name de seccion de la tabla
 	$valor =  $rutas[0];
-
-	/*=============================================
-	lista de URLS amigables (categoria) 
-	=============================================*/
-
-	$rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
-
-	if($rutas[0] == $rutaCategorias["ruta"]){
-
-		$ruta = $rutas[0];
-
-	}
-
+	
 	/*=============================================
 	lista de URLS (subcategoria)
 	=============================================*/
@@ -92,14 +80,31 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
 	///        Tabla               clave    elemento
 	foreach ($rutaSubCategorias as $key => $value) {  ///Recorre el array
-		
-		if($rutas[0] == $value["ruta"]){
 
-			$ruta = $rutas[0];
+		if($rutas['0'] == $value["ruta"]){
+
+			$ruta = $rutas['0'];
 
 		}
 
 	}
+
+	if($ruta == null){
+
+		/*=============================================
+		lista de URLS amigables (categoria) 
+		=============================================*/
+
+		$rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
+		
+		if($rutas['0'] == $rutaCategorias["ruta"]){
+
+				$ruta = $rutas['0'];
+
+		}
+
+	}
+
 
 	/*=============================================
 	Traer los datos requeridos
@@ -107,7 +112,9 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
 	if($ruta != null){
 
-		include "modulos/productos.php";
+		/*include "modulos/productos.php";*/
+
+		include "modulos/destacados.php";
 
 	}else{
 
@@ -116,6 +123,8 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 	}
 
 }else{
+
+	include "modulos/accesoRapidoPortada.php";
 
 	include "modulos/portadaTienda.php";
 	
