@@ -129,6 +129,10 @@
 					<li data-target="#carousel-example-generics" data-slide-to="5"></li>
 
 					<li data-target="#carousel-example-generics" data-slide-to="6"></li>
+
+					<li data-target="#carousel-example-generics" data-slide-to="7"></li>
+
+					<li data-target="#carousel-example-generics" data-slide-to="8"></li>
 					
 				</ol>
 				<center>
@@ -136,7 +140,7 @@
 					
 						<div class="item active">
 							<a href="#">
-								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/c31.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/1.png" alt="...">
 							</a>	
 							<div class="carousel-caption">
 						
@@ -145,7 +149,7 @@
 				
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/c32.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/2.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -154,7 +158,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/c33.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/3.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -163,7 +167,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/c34.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/4.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -172,7 +176,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/c35.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/5.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -181,7 +185,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/c36.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/6.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -190,7 +194,25 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/c37.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/7.png" alt="...">
+							</a>
+							<div class="carousel-caption">
+								FREE!!
+							</div>
+						</div>
+
+						<div class="item">
+							<a href="#">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/8.png" alt="...">
+							</a>
+							<div class="carousel-caption">
+								FREE!!
+							</div>
+						</div>
+
+						<div class="item">
+							<a href="#">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/9.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
