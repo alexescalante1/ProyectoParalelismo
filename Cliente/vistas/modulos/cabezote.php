@@ -30,7 +30,8 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-
+		  
+	 	<li><a href="#">Idioma</a></li>
 		
 		<li><a href="#">Cupones</a></li>
 
