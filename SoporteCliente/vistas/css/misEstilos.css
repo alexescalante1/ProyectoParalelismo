@@ -1,10 +1,9 @@
 .footer-cabezal {
     margin-top: 0;
+    color: orchid;
 }
 
-.body {}
-
 body h1 {
-    color: red;
+    color: orange;
     font-size: 100px;
 }
