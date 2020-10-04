@@ -168,7 +168,7 @@ p {
 }
 
 .imagenAC {
-    background-image: url(vistas/img/plantilla/atencionAlcliente.png);
+    background-image: url(../img/plantilla/atencionAlcliente.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: 25rem;
