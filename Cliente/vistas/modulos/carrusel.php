@@ -1,22 +1,36 @@
 <div class="container">
+
 	<div class="row">
+
 		<div class="col-md-8">
+
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
 				<ol class="carousel-indicators">
+
 					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+
 					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+
 					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+
 					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="5"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="6"></li>
-				</ol>
-				<center>
-					<div class="carousel-inner" role="listbox">
 					
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					
+					<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+					
+					<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+				
+				</ol>
+				
+				<center>
+				
+					<div class="carousel-inner" role="listbox">
+	
 						<div class="item active">
 							<a href="https://www.youtube.com/watch?v=YQRHrco73g4">
-								<img src="<?php echo $url; ?>vistas/img/portada/c1.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/semanales/c1.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								Oie Zii
@@ -25,7 +39,7 @@
 				
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c2.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/semanales/c2.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -34,7 +48,7 @@
 					
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c3.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/semanales/c3.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 						
@@ -43,7 +57,7 @@
 
 						<div class="item">
 							<a href="#">	
-								<img src="<?php echo $url; ?>vistas/img/portada/c4.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/semanales/c4.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 						
@@ -52,7 +66,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c5.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/semanales/c5.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 						
@@ -61,7 +75,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c6.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/semanales/c6.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 						
@@ -70,7 +84,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c7.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/semanales/c7.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 						
@@ -89,25 +103,44 @@
 					<span class="sr-only">siguiente</span>
 				</a>
 			</div>
+			
 		</div>
 
 		<div class="col-md-4">
+
+			<a href="https://www.youtube.com/watch?v=j5vYLYZjecI&ab_channel=AlexCGDesign">
+                <video onloadedmetadata="this.muted=true" autoplay loop>
+                    <source src="<?php echo $servidor; ?>vistas/video/Red8.mp4">
+                </video>
+			</a>
+			
 			<div id="carousel-example-generics" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-example-generics" data-slide-to="0" class="active"></li>
+
 					<li data-target="#carousel-example-generics" data-slide-to="1"></li>
+
 					<li data-target="#carousel-example-generics" data-slide-to="2"></li>
+
 					<li data-target="#carousel-example-generics" data-slide-to="3"></li>
+
 					<li data-target="#carousel-example-generics" data-slide-to="4"></li>
+
 					<li data-target="#carousel-example-generics" data-slide-to="5"></li>
+
 					<li data-target="#carousel-example-generics" data-slide-to="6"></li>
+
+					<li data-target="#carousel-example-generics" data-slide-to="7"></li>
+
+					<li data-target="#carousel-example-generics" data-slide-to="8"></li>
+					
 				</ol>
 				<center>
 					<div class="carousel-inner" role="listbox">
 					
 						<div class="item active">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c31.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/1.png" alt="...">
 							</a>	
 							<div class="carousel-caption">
 						
@@ -116,7 +149,7 @@
 				
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c32.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/2.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -125,7 +158,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c33.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/3.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -134,7 +167,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c34.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/4.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -143,7 +176,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c35.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/5.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -152,7 +185,7 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c36.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/6.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
@@ -161,7 +194,25 @@
 
 						<div class="item">
 							<a href="#">
-								<img src="<?php echo $url; ?>vistas/img/portada/c37.png" alt="...">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/7.png" alt="...">
+							</a>
+							<div class="carousel-caption">
+								FREE!!
+							</div>
+						</div>
+
+						<div class="item">
+							<a href="#">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/8.png" alt="...">
+							</a>
+							<div class="carousel-caption">
+								FREE!!
+							</div>
+						</div>
+
+						<div class="item">
+							<a href="#">
+								<img src="<?php echo $servidor; ?>vistas/img/carrusel/ofertas/9.png" alt="...">
 							</a>
 							<div class="carousel-caption">
 								FREE!!
