@@ -3,7 +3,7 @@
             <div class="cabezera contenedor">
                 <div class="footer-1">
                     <div class="imagen-footer">
-                        <a href="http://localhost/PROYECTO_PARALELISMO/Cliente/">
+                        <a href="<?php echo $urlMsvCliente?>">
                             
                             <img src="vistas/img/plantilla/Logo.png" alt="">
 

@@ -8,4 +8,10 @@ class Ruta{
 	
 	}
 
+	public function ctrRutaMicrosevCliente(){
+
+		return "http://localhost/PROYECTO_PARALELISMO/Cliente/";
+	
+	}
+
 }

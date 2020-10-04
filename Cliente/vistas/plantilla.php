@@ -105,7 +105,6 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
 	}
 
-
 	/*=============================================
 	Traer los datos requeridos
 	=============================================*/
@@ -113,7 +112,7 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 	if($ruta != null){
 
 		/*include "modulos/productos.php";*/
-
+		
 		include "modulos/destacados.php";
 
 	}else{
@@ -132,8 +131,7 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
 }
 
-
-echo "<br><br><br><br><br><br>";
+echo "<br><br><br>";
 
 include "modulos/footer.php";
 
