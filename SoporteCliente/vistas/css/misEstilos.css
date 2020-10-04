@@ -161,6 +161,40 @@ p {
 }
 
 
+/* RESPONSIVE GRID*/
+
+@media (max-width:750px) {
+    .footer-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-1 img {
+        column-gap: 10rem;
+    }
+    .cabezera {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .footer-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-2 a {
+        margin: 1rem;
+        text-align: center;
+    }
+    .dropdown {
+        text-align: center;
+    }
+    .dropbtn {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+
 /* principal contenido*/
 
 .contenido-principal {
@@ -168,7 +202,7 @@ p {
 }
 
 .imagenAC {
-    background-image: url(vistas/img/plantilla/atencionAlcliente.png);
+    background-image: url(../img/atencionAlcliente.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: 25rem;
@@ -194,6 +228,44 @@ p {
     height: 0.3rem;
     margin-top: 6rem;
     margin-bottom: 6rem;
+}
+
+@media (max-width: 550px) {
+    .contenido-principal {
+        margin-top: 1rem;
+        max-width: 80%;
+    }
+    .contenido-principal h1 {
+        font-size: 3.0rem;
+    }
+    .parrafo::after {
+        content: " ";
+        display: block;
+        background-color: gray;
+        width: 35rem;
+        height: 0.3rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .contenido-principal {
+        margin-top: 1rem;
+        max-width: 80%;
+    }
+    .contenido-principal h1 {
+        font-size: 3.0rem;
+    }
+    .parrafo::after {
+        content: " ";
+        display: block;
+        background-color: gray;
+        width: 45rem;
+        height: 0.3rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
 }
 
 
@@ -273,12 +345,26 @@ p {
     cursor: pointer;
 }
 
-.formulario::after {
-    content: " ";
-    width: 80rem;
-    background-color: gray;
-    height: 0.3rem;
-    margin-top: 6rem;
+@media (max-width: 550px) {
+    .formulario {
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 3rem;
+    }
+    .registroFormulario {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .formulario {
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 3rem;
+    }
+    .registroFormulario {
+        margin: 1rem;
+    }
 }
 
 
@@ -308,6 +394,44 @@ p {
 .primerbloque p {
     margin-top: 1.5rem;
     font-size: 1.5rem;
+}
+
+@media (max-width: 550px) {
+    .devo::after {
+        content: " ";
+        display: block;
+        background-color: gray;
+        width: 35rem;
+        height: 0.3rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .devo::after {
+        content: " ";
+        display: block;
+        background-color: gray;
+        width: 45rem;
+        height: 0.3rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .bloquePrincipal {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .bloquePrincipal {
+        display: grid;
+        grid-template-columns: 100%;
+    }
 }
 
 
