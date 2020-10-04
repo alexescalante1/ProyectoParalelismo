@@ -3,7 +3,7 @@
             <div class="cabezera contenedor">
                 <div class="footer-1">
                     <div class="imagen-footer">
-                        <img src="img/Logo.png" alt="">
+                        <img src="vistas/img/plantilla/Logo.png" alt="">
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn">Ayuda</button>

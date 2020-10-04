@@ -36,6 +36,8 @@
 <?php
 	
 	include "modulos/cabezote.php";
+	include "modulos/main.php";
+	include "modulos/body.php"
 	
 
 
