@@ -3,9 +3,7 @@
 PRODUCTOS DESTACADOS EN OFERTA
 =============================================-->
 
-
-<div class = "productos">
-
+<div class = "productos" style = "padding-top:20px;">
 
     <!--=============================================
     VISTA PRODUCTOS EN GRID

@@ -11,7 +11,7 @@ BARRA DE PRODUCTOS GRID o LISTA "ORGANIZADOR"
 
             <div class = "btn-group pull-right">
                 
-                <button type = "button" class = "btn btn-default btnGrid" id = "btnGrid0">
+                <button type = "button" class = "btn btn-default btnGrid backColor" id = "btnGrid0">
 
                     <i class = "fa fa-th" aria-hidden = "true"></i>
 
@@ -19,7 +19,7 @@ BARRA DE PRODUCTOS GRID o LISTA "ORGANIZADOR"
 
                 </button>
 
-                <button type = "button" class = "btn btn-default btnList" id = "btnList0">
+                <button type = "button" class = "btn btn-default btnList backColor" id = "btnList0">
 
                     <i class = "fa fa-list" aria-hidden = "true"></i>
 
