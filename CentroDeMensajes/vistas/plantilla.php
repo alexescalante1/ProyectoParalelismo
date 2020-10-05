@@ -17,16 +17,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="css/misEstilos.css">
 
 </head>
 
 <body>
-
+<h1>QUE VAYA A LA VERGA LA EDUACION VIRTUAL.</h1>
 <?php
 
 	include "modulos/cabezote.php";
 
-}
 
 ?>
 
