@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer Design</title>
+   
+    <link rel="stylesheet" href="<?php echo $url?>vistas/css/estilos.css">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
 <footer>
        
        <div class="container-footer-all">
@@ -16,27 +27,18 @@
                     <h1>Redes Sociales</h1>
 
                     <div class="row">
-                        <img src="icon/facebook.png">
+                        <img src="vistas/icon/facebook.png">
                         <label>Siguenos en Facebook</label>
                     </div>
                     <div class="row">
-                        <img src="icon/twitter.png">
+                        <img src="vistas/icon/twitter.png">
                         <label>Siguenos en Twitter</label>
                     </div>
                     <div class="row">
-                        <img src="icon/instagram.png">
+                        <img src="vistas/icon/instagram.png">
                         <label>Siguenos en Instagram</label>
                     </div>
-                   <!---
-                    <div class="row">
-                        <img src="icon/google-plus.png">
-                        <label>Siguenos en Google Plus</label>
-                    </div>
-                    <div class="row">
-                        <img src="icon/pinterest.png">
-                        <label>Siguenos en Pinteres</label>
-                    </div>
-                    -->
+                   
 
                 </div>
 
@@ -45,7 +47,7 @@
                     <h1>Informacion Contactos</h1>
 
                     <div class="row2">
-                        <img src="icon/house.png">
+                        <img src="vistas/icon/house.png">
                         <label>Tiahuanaco,
                         numero 501 
                         Puno-Peru
@@ -53,15 +55,12 @@
                     </div>
 
                     <div class="row2">
-                        <img src="icon/smartphone.png">
-                        <label>+51 934 621 212
-                        +51 983 762 574
-                        +51 910 106 752
-                        +51 912 805 678</label>
+                        <img src="vistas/icon/smartphone.png">
+                        <label>+51 934 621 212</label>
                     </div>
 
                     <div class="row2">
-                        <img src="icon/contact.png">
+                        <img src="vistas/icon/contact.png">
                          <label>mistore@gmail.com</label>
                     </div>
 
@@ -85,3 +84,6 @@
             </div>
         
     </footer>
+   
+</body>
+</html>
