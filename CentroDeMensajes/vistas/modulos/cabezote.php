@@ -1,4 +1,4 @@
 ﻿<div class="dato">
-    <h1>Hola Mundo</h1>
+    <h1>Centro de Mensajes</h1>
 </div>
 

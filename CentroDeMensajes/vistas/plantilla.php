@@ -22,11 +22,10 @@
 </head>
 
 <body>
-<h1>QUE VAYA A LA VERGA LA EDUACION VIRTUAL.</h1>
+
 <?php
 
 	include "modulos/cabezote.php";
-
 
 ?>
 
