@@ -30,6 +30,8 @@
 	<link rel="stylesheet" href="<?php echo $url?>vistas/css/misEstilos.css">
 
 	<link rel="stylesheet" href="<?php echo $url?>vistas/css/normalize.css">
+	
+	<link rel="stykesheet" href="<?php echo $url?>vistas/css/estilos.css">
 
 </head>
 
