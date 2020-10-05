@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Footer Design</title>
-   
-    <link rel="stylesheet" href="<?php echo $url?>vistas/css/estilos.css">
-    
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-</head>
-<body>
 <footer>
        
        <div class="container-footer-all">
@@ -26,15 +15,15 @@
 
                     <h1>Redes Sociales</h1>
 
-                    <div class="row">
+                    <div class="Row">
                         <img src="vistas/icon/facebook.png">
                         <label>Siguenos en Facebook</label>
                     </div>
-                    <div class="row">
+                    <div class="Row">
                         <img src="vistas/icon/twitter.png">
                         <label>Siguenos en Twitter</label>
                     </div>
-                    <div class="row">
+                    <div class="Row">
                         <img src="vistas/icon/instagram.png">
                         <label>Siguenos en Instagram</label>
                     </div>
@@ -83,7 +72,5 @@
 
             </div>
         
-    </footer>
+</footer>
    
-</body>
-</html>

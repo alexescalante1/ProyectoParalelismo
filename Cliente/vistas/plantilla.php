@@ -128,12 +128,15 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 	include "modulos/portadaTienda.php";
 	
 	include "modulos/destacados.php";
-
+	include "modulos/destacados.php";
+	include "modulos/destacados.php";
+	include "modulos/destacados.php";
+	
 }
 
 echo "<br><br><br>";
 
-include "modulos/footer.php";
+	include "modulos/footer.php";
 
 ?>
 
