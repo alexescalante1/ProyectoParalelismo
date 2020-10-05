@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="<?php echo $url?>vistas/css/misEstilos.css">
 
 	<link rel="stylesheet" href="<?php echo $url?>vistas/css/normalize.css">
-	
+
 	<link rel="stykesheet" href="<?php echo $url?>vistas/css/estilos.css">
 
 </head>
@@ -41,7 +41,8 @@
 	
 	include "modulos/cabezote.php";
 	include "modulos/main.php";
-	include "modulos/body.php"
+	include "modulos/body.php";
+	include "modulos/footer.php"
 	
 ?>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
