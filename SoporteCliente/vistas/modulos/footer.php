@@ -45,10 +45,7 @@
 
                     <div class="row2">
                         <img src="vistas/icon/smartphone.png">
-                        <label>+51 934 621 212
-                        +51 983 762 574
-                        +51 910 106 752
-                        +51 912 805 678</label>
+                        <label>+51 934 621 212</label>
                     </div>
 
                     <div class="row2">
