@@ -9,17 +9,17 @@
                 <p> 912 -805 -679 o envianos un email: mistore@gmail.com</p>
             </div>
         </div>
-        <form action="" class="registroFormulario">
+        <form method="POST" action="controladores/insertar.php" class="registroFormulario">
             <fieldset>
                 <legend class="marginformulario">Registrar Queja</legend>
                 <label for="nombre">Nombre</label>
-                <input type="text" name="" id="nombre" placeholder="Nombre">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
 
                 <label for="correo">Email</label>
-                <input type="email" id="correo" required placeholder="E-mail">
+                <input type="email" id="correo" name="correo" required placeholder="E-mail">
 
                 <label for="telefono">Numero</label>
-                <input type="tel" id="telefono" required placeholder="Telefono">
+                <input type="tel" id="telefono" name="numero" required placeholder="Telefono">
 
                 <label for="mensaje">Mensaje</label>
                 <textarea style="font-size: 1.5rem;" name="mensaje" id="mensaje" cols="20" rows="4" required placeholder="Escribir mensaje"></textarea>
