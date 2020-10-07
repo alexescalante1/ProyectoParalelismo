@@ -11,7 +11,7 @@
             <div id="chat">
                 <div id="datos-chat">
                 <span style="color: #1c62c4;">Jenny :</span>
-                <span style="color: #848484;">Hola como estas</span>
+                <span style="color: #848484;">Hola como estas julio cesar</span>
                 <span style="float: right;">10:54 am</span>
                 </div>
             </div>
