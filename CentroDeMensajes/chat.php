@@ -10,4 +10,4 @@
         <span style="float: right;"><?php  echo formatearFecha($fila['Fecha']);?></span>
     </div>
 <?php endwhile;
-                ?>
+?>
