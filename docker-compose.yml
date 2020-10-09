@@ -1,0 +1,41 @@
+  
+version: '3.1'
+
+services:
+
+  Cliente-service:
+    build: ./Cliente
+    restart: always
+    ports:
+      - "85:85"
+    networks:
+      - overlay
+
+  soporteCliente:
+    build: ./SoporteCliente
+    restart: always
+    ports:
+      - "86:86"
+    networks:
+      - overlay
+
+  valoracion-service:
+    build: ./ValoracionesProducto
+    restart: always
+    ports:
+      - "87:87"
+    networks:
+      - overlay
+   
+   vendedor-Services:
+        build: ./Vendedor
+        restart: always
+        ports:
+          - "88:88"
+        networks:
+          - overlay
+
+
+
+networks:
+  overlay:
