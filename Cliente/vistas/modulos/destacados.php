@@ -3,865 +3,209 @@
 BARRA DE PRODUCTOS GRID o LISTA "ORGANIZADOR"
 =============================================-->
 
-<div class = "container-fluid well well-sm barraProductos">
+<?php
 
-    <div class = "container">
+$titulosModulos = array("OFERTAS RELAMPAGO", "MEJOR VALORADOS");
+$rutaModulos = array("ofertas-relampago","mejor-valorados");
 
-        <div class = "col-xs-12 organizaProductos">
+$cantidad = 42;
+$item = null;
+$valor = null;
 
-            <div class = "btn-group pull-right">
-                
-                <button type = "button" class = "btn btn-default btnGrid backColor" id = "btnGrid0">
+if($titulosModulos[0] == "OFERTAS RELAMPAGO"){
 
-                    <i class = "fa fa-th" aria-hidden = "true"></i>
+    $ordenar = "oferta";
+    $ofertas = ControladorProductos::ctrMostrarProductos($ordenar, $item, $valor,$cantidad);
 
-                    <span class = "col-xs-0 pull-right">GRID</span>
+}
 
-                </button>
+if($titulosModulos[1] == "MEJOR VALORADOS"){
 
-                <button type = "button" class = "btn btn-default btnList backColor" id = "btnList0">
+    $ordenar = "valoracion";
+    $valorados = ControladorProductos::ctrMostrarProductos($ordenar, $item, $valor,$cantidad);
 
-                    <i class = "fa fa-list" aria-hidden = "true"></i>
+}
 
-                    <span class = "col-xs-0 pull-right">LIST</span>
+$modulos = array($ofertas, $valorados);
 
-                </button>
-            
-            </div>
+for($i = 0; $i < 2; $i ++){
 
-        </div>
+	echo '<div class="container-fluid well well-sm barraProductos">
 
-    </div>
+			<div class="container">
+				
+				<div class="row">
+					
+					<div class="col-xs-12 organizarProductos">
 
-</div>
+						<div class="btn-group pull-right">
 
+							 <button type="button" class="btn btn-default btnGrid backColor" id="btnGrid'.$i.'">
+							 	
+								<i class="fa fa-th" aria-hidden="true"></i>  
 
-<!--=============================================
-PRODUCTOS DESTACADOS EN OFERTA
-=============================================-->
+								<span class="col-xs-0 pull-right"> GRID</span>
 
-<div class = "container-fluid productos">
+							 </button>
 
-    <div class = "container">
+							 <button type="button" class="btn btn-default btnList backColor" id="btnList'.$i.'">
+							 	
+								<i class="fa fa-list" aria-hidden="true"></i> 
 
-        <div class = "row">
+								<span class="col-xs-0 pull-right"> LIST</span>
 
-            <!--=============================================
-            TITULO DE PRODUCTOS
-            =============================================-->
+							 </button>
+							
+						</div>		
 
-            <div class = "col-xs-12 tituloDestacado">
+					</div>
 
-                <div class = "col-sm-6 col-xs-9">
-                    <h1 class = "h1OnlyMovil">
+				</div>
 
-                        <small>
-                            ARTICULOS EN OFERTA
-                        </small>
+			</div>
 
-                    </h1>
-                </div>
-
-                <!--=============================================-->
-
-                <div class = "col-sm-6 col-xs-3">
-                    <a href="articulos-gratis">
-                        <button class = "btn btn-default backColor pull-right">
-                            Ver Mas <span class = "fa fa-chevron-right"></span>
-                        </button>
-                    </a>
-                </div>
-                
-                <!--=============================================-->
-
-            </div>
-
-            <hr><br>
-
-        </div>
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <!--=============================================
-        VISTA PRODUCTOS EN GRID
-        =============================================-->
-
-        <ul class = "grid0">
-            
-
-            <!--=============== PRODUCTO N ===============-->
+		</div>
 
 
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/1.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
+		<div class="container-fluid productos">
+	
+			<div class="container">
+		
+				<div class="row">
 
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
+					<div class="col-xs-12 tituloDestacado">
 
-                <!--=============================================-->
+						<div class="col-sm-6 col-xs-12">
+					
+							<h1><small>'.$titulosModulos[$i].' </small></h1>
 
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
+						</div>
+
+						<div class="col-sm-6 col-xs-12">
+					
+							<a href="'.$rutaModulos[$i].' ">
+								
+								<button class="btn btn-default backColor pull-right">
+									
+									VER MÁS <span class="fa fa-chevron-right"></span>
+
+								</button>
+
+							</a>
+
+						</div>
+
+					</div>
+
+					<div class="clearfix"></div>
+
+					<hr>
+
                 </div>
                 
-                <!--=============================================-->
 
-                <div class = "col-xs-6 enlaces">
+
+				<ul class="grid'.$i.'">';
+
+				foreach ($modulos[$i] as $key => $value) {
                     
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
+
+					echo '<li class="col-md-2 col-sm-4 col-xs-6">
+
+							<figure>
+								
+								<a href="'.$value["ruta"].'" class="pixelProducto">
+									
+									<img src="'.$servidor.$value["portada"].'" class="img-responsive">
+
+								</a>
+
+							</figure>
+
+							<h4>
+					
+								<small>
+									
+									<a href="'.$value["ruta"].'" class="pixelProducto">
+										
+										'.$value["titulo"].'
+
+										<span> </span>';
+
+									echo '</a>
+
+								</small>			
+
+							</h4>
+
+                            <div class="col-xs-6 precio">';
                             
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
 
-                        <a href="#" class = "pixelProducto">
+                            if($value["oferta"] != 0){
 
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
+                                echo '<h2>
 
-                            </button>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!--=============================================-->
-
-            </li>
-
-
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/2.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
+                                        <small class = "PecioSolesProducto">
                     
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
-                            
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
+                                            <strong>'.$value["precio"].'</strong>
 
-                        <a href="#" class = "pixelProducto">
+                                        </small>
 
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
+                                    </h2>';
+
+                            }else{
+
+                                echo '<h2><small class = "PecioSolesProducto">'.$value["precio"].'</small></h2>';
+
+                            }
+							
+
+							echo '</div>
+
+							<!--=============================================-->
+
+                            <div class = "col-xs-6 enlaces">
                                 
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
+                                <div class = "btn-group pull-right">
+                                    
+                                    <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
+                                        
+                                        <i class = "fa fa-heart"></i>
+                                    
+                                    </button>
 
-                            </button>
+                                    <a href="#" class = "pixelProducto">
 
-                        </a>
+                                        <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
+                                            
+                                            <i class = "fa fa-eye" aria-hidden = "true"></i>
 
-                    </div>
+                                        </button>
 
-                </div>
+                                    </a>
 
-                <!--=============================================-->
+                                </div>
 
-            </li>
+                            </div>
 
-
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/19.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
-                    
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
+                            <!--=============================================-->
                             
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
 
-                        <a href="#" class = "pixelProducto">
+						</li>';
+				}
 
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
+				echo '</ul>
 
-                            </button>
 
-                        </a>
+				<ul class="list'.$i.'" style="display:none">';
 
-                    </div>
 
-                </div>
+				echo '</ul>
 
-                <!--=============================================-->
+			</div>
 
-            </li>
+		</div>';
 
+}
 
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/4.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
-                    
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
-                            
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
-
-                        <a href="#" class = "pixelProducto">
-
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
-
-                            </button>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!--=============================================-->
-
-            </li>
-
-
-
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/5.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
-                    
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
-                            
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
-
-                        <a href="#" class = "pixelProducto">
-
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
-
-                            </button>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!--=============================================-->
-
-            </li>
-
-
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/6.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
-                    
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
-                            
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
-
-                        <a href="#" class = "pixelProducto">
-
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
-
-                            </button>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!--=============================================-->
-
-            </li>
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/7.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
-                    
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
-                            
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
-
-                        <a href="#" class = "pixelProducto">
-
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
-
-                            </button>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!--=============================================-->
-
-            </li>
-
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/8.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
-                    
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
-                            
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
-
-                        <a href="#" class = "pixelProducto">
-
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
-
-                            </button>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!--=============================================-->
-
-            </li>
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/9.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
-                    
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
-                            
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
-
-                        <a href="#" class = "pixelProducto">
-
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
-
-                            </button>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!--=============================================-->
-
-            </li>
-
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/10.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
-                    
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
-                            
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
-
-                        <a href="#" class = "pixelProducto">
-
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
-
-                            </button>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!--=============================================-->
-
-            </li>
-
-
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/11.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
-                    
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
-                            
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
-
-                        <a href="#" class = "pixelProducto">
-
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
-
-                            </button>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!--=============================================-->
-
-            </li>
-
-
-
-
-            <!--=============== PRODUCTO N ===============-->
-
-
-            <li class = "col-md-2 col-sm-4 col-xs-6">
-                <figure>
-                    <a href="#">
-                        <img src="<?php echo $servidor; ?>vistas/img/productos/destacados/12.png" class = "img-responsive">
-                    </a>
-                </figure>
-                
-                <!--=============================================-->
-
-                <h4>
-                   <small>
-                       <a href="#" class = "pixelProducto">
-                           Casaca Roja <br>
-                       </a>
-                   </small> 
-                </h4>
-
-                <!--=============================================-->
-
-                <div class = "col-xs-6 precio">
-                    <h2>
-                        <small>
-                            70% Off
-                        </small> 
-                    </h2>
-                </div>
-                
-                <!--=============================================-->
-
-                <div class = "col-xs-6 enlaces">
-                    
-                    <div class = "btn-group pull-right">
-                        
-                        <button type = "button" class = "btn btn-default btn-xs deseos" idProducto = "470" data-toggle = "tooltip" title = "Agregar a mi lista de deseos">
-                            
-                            <i class = "fa fa-heart"></i>
-                        
-                        </button>
-
-                        <a href="#" class = "pixelProducto">
-
-                            <button type = "button" class = "btn btn-default btn-xs" data-toggle = "tooltip" title = "Ver Productos">
-                                
-                                <i class = "fa fa-eye" aria-hidden = "true"></i>
-
-                            </button>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!--=============================================-->
-
-            </li>
-
-
-
-
-
-        </ul>
-
-    </div>
-
-</div>
+?>

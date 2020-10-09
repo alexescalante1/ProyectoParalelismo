@@ -30,17 +30,17 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/bootstrapM.min.css">
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/plugins/bootstrapM.min.css">
 
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/plugins/font-awesome.min.css">
 
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/misEstilos.css">
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/misEstilos.css">
 
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/footerEstilos.css">
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/footerEstilos.css">
 
-	<script src="<?php echo $url; ?>vistas/js/plugins/jquery.min.js"></script>
+	<script src="<?php echo $urlGitHub; ?>vistas/js/plugins/jquery.min.js"></script>
 
-	<script src="<?php echo $url; ?>vistas/js/plugins/bootstrap.min.js"></script>
+	<script src="<?php echo $urlGitHub; ?>vistas/js/plugins/bootstrap.min.js"></script>
 
 </head>
 
@@ -60,6 +60,7 @@ LISTA BLANCA DE URLS AMIGABLES (DINAMICO)
 
 $rutas = array(); ///Declarando como base array
 $ruta = null;
+$infoProducto = null;
 
 if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
@@ -105,15 +106,35 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
 	}
 
+	if($ruta == null){
+		$rutaProductos = ControladorProductos::ctrMostrarInfoProducto($item, $valor);
+		
+			if($rutas[0] == $rutaProductos["ruta"]){
+
+				$infoProducto = $rutas[0];
+
+		}
+	}
+
 	/*=============================================
 	Traer los datos requeridos
 	=============================================*/
 
 	if($ruta != null){
 
-		/*include "modulos/productos.php";*/
 		
-		include "modulos/destacados.php";
+		if($ruta == "ropa"){
+
+			include "modulos/categorias1.php";
+
+		}else if($ruta == "calzado"){
+
+			
+		}else{
+
+			include "modulos/productos.php";
+
+		}
 
 	}else{
 
@@ -124,12 +145,9 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 }else{
 
 	include "modulos/accesoRapidoPortada.php";
-
+	
 	include "modulos/portadaTienda.php";
 	
-	include "modulos/destacados.php";
-	include "modulos/destacados.php";
-	include "modulos/destacados.php";
 	include "modulos/destacados.php";
 	
 }
