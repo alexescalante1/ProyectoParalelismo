@@ -30,17 +30,17 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
 
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/bootstrapM.min.css">
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/plugins/bootstrapM.min.css">
 
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/plugins/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/plugins/font-awesome.min.css">
 
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/misEstilos.css">
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/misEstilos.css">
 
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/footerEstilos.css">
+	<link rel="stylesheet" href="<?php echo $urlGitHub; ?>vistas/css/footerEstilos.css">
 
-	<script src="<?php echo $url; ?>vistas/js/plugins/jquery.min.js"></script>
+	<script src="<?php echo $urlGitHub; ?>vistas/js/plugins/jquery.min.js"></script>
 
-	<script src="<?php echo $url; ?>vistas/js/plugins/bootstrap.min.js"></script>
+	<script src="<?php echo $urlGitHub; ?>vistas/js/plugins/bootstrap.min.js"></script>
 
 </head>
 
