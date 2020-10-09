@@ -60,6 +60,7 @@ LISTA BLANCA DE URLS AMIGABLES (DINAMICO)
 
 $rutas = array(); ///Declarando como base array
 $ruta = null;
+$infoProducto = null;
 
 if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
@@ -105,15 +106,35 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 
 	}
 
+	if($ruta == null){
+		$rutaProductos = ControladorProductos::ctrMostrarInfoProducto($item, $valor);
+		
+			if($rutas[0] == $rutaProductos["ruta"]){
+
+				$infoProducto = $rutas[0];
+
+		}
+	}
+
 	/*=============================================
 	Traer los datos requeridos
 	=============================================*/
 
 	if($ruta != null){
 
-		/*include "modulos/productos.php";*/
 		
-		include "modulos/destacados.php";
+		if($ruta == "ropa"){
+
+			include "modulos/categorias1.php";
+
+		}else if($ruta == "calzado"){
+
+			
+		}else{
+
+			include "modulos/productos.php";
+
+		}
 
 	}else{
 
@@ -127,9 +148,6 @@ if(isset($_GET["ruta"])){ ///Isset Evalua si vienen variables get o Post
 	
 	include "modulos/portadaTienda.php";
 	
-	include "modulos/destacados.php";
-	include "modulos/destacados.php";
-	include "modulos/destacados.php";
 	include "modulos/destacados.php";
 	
 }
