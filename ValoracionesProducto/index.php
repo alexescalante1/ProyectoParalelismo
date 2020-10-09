@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>VALORACION</title>
-    <link rel="stylesheet" href="vistas/css/misEstilos.css">
+    <link rel="stylesheet" href="<?php echo $url?>vistas/css/misEstilos.css">
     <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani" rel="stylesheet">
     
     <link rel="stylesheet" href="<?php echo $url?>vistas/css/estilos.css">
